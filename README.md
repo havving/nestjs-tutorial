@@ -61,3 +61,6 @@ Node(및 서버 측 JS)를 위한 훌륭한 라이브러리, 도우미 및 도�
 - src 폴더 : 비즈니스 로직이 들어가는 폴더 
   - main.ts : App을 생성하고 실행 
   - app.module.ts : App 모듈 정의
+
+
+<img src="img/diagram.png" height="300"></img>
