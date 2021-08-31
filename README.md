@@ -147,3 +147,54 @@ DTO를 사용하는 이유는 다음과 같다.
 - 데이터 유효성을 체크하는 데 효율적이다.
 
 - 더 안정적인 코드로 만들어 주며, TypeScript의 타입으로도 사용된다.
+
+<br/>
+
+#### 3일차(8/31)
+
+##### Pipe
+
+파이프는 @Injectable 클래스로, Data transformation과 Data validation을 위해 사용된다. 컨트롤러 경로 처리기에 의해 처리되는 인수에 의해 작동되며, Nest는 메서드가 호출되기 직전에 파이프를 삽입하고 파이프는 메서드로 향하는 인수를 수신하고 이에 대해 작동한다.
+
+<br/>
+
+**Data transformation**
+
+입력 데이터를 원하는 형식으로 변환한다. (ex. 문자열 → 정수)
+
+**Data validation**
+
+입력 데이터를 평가하고 유효한 경우 변경되지 않은 상태로 전달하면 되지만, 그렇지 않은 경우 데이터가 올바르지 않을 때 예외를 발생시킨다.
+
+파이프는 위 두가지 모든 경우에서 Route Handler가 처리하는 인수에 대해서 작동한다. 
+
+<br/>
+
+**파이프 사용하는 법(Binding Pipes)**
+
+1. Handler-level Pipes
+2. Parameter-level Pipes
+3. Global-level Pipes
+
+<br/>
+
+**Built-in Pipes**
+
+1. ValidationPipe
+2. ParseIntPipe
+3. ParseBoolPipe
+4. ParseArrayPipe
+5. ParseUUIDPipe
+6. DefaultValuePipe
+
+<br/>
+
+파이프를 생성할 때 필요한 모듈은 다음과 같다.
+
+- class-validator
+
+- class-transformer
+
+`npm install class-validator class-transformer --save`
+
+※ Pipe 참조문서: https://github.com/typestack/class-validator#manual-validation
