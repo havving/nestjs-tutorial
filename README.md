@@ -198,3 +198,49 @@ DTO를 사용하는 이유는 다음과 같다.
 `npm install class-validator class-transformer --save`
 
 ※ Pipe 참조문서: https://github.com/typestack/class-validator#manual-validation
+
+<br/>
+
+#### 4일차(9/1)
+
+- PostgresSQL
+- pgAdmin(DB Tool)
+
+##### TypeORM
+
+Node.js에서 실행되고 TypeScript로 작성된 객체 관계형 mapper 라이브러리
+
+MySQL, PostgreSQL, MariaDB, SQLite, MS SQL Server, Oracle 등의 여러 데이터베이스 지원
+
+##### ORM(Object Relational Mapping)
+
+객체와 관계형 데이터베이스의 데이터를 자동으로 변형 및 연결하는 작업
+
+ORM을 이용한 개발은 객체와 데이터베이스의 변형에 유연하게 사용할 수 있음
+
+- 모델을 기반으로 데이터베이스 테이블 체계를 자동으로 생성한다.
+- 데이터베이스에서 개체를 쉽게 삽입, 업데이트 및 삭제할 수 있다.
+- 테입르 간의 매핑(1:1, 1:n, n:m)을 만든다.
+- 간단한 CLI명령을 제공한다.
+- 간단한 코딩으로 ORM 프레임워크를 사용하기 쉽다.
+- 다른 모듈과 쉽게 통합된다.
+
+<br/>
+
+설치해야하는 모듈들
+
+- @nestjs/typeorm : NestJS에서 TypeORM을 사용하기 위해 연동시켜주는 모듈
+- typeorm : TypeORM 모듈
+- pg : Postgres 모듈
+
+`npm install pg typeorm @nestjs/typeorm --save`
+
+참조문서: https://docs.nestjs.com/techniques/database
+
+<br/>
+
+##### Repository
+
+데이터베이스에 관련된 일은 서비스가 아닌 Repository에서 한다. 이를 Repository Pattern 이라고 부른다.
+
+참조문서: https://typeorm.delightful.studio/classes/_repository_repository_.repository.html
