@@ -294,6 +294,7 @@ user.entity.ts에서 원하는 필드 값을 유니크한 값으로 정해주면
    ex. 1234 → 암호화(알고리즘+암호화 키) → gUuFwNo4zkMV →  복호화 → 1234
 
 3. SHA256 등으로 해시(Hash)해서 저장(단방향)
+   (https://emn178.github.io/online-tools/sha256.html)
 
    1234 → 03ac674216f3e15c761ee1a5e... → 복호화 X
 
